@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author SALA
+ */
+public class Calcular {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Bienvenido a mi calculador. Presione 1 para suma,2 para resta, 3 para multiplicación y 4 para divición");
+        Scanner objetoentrada=new Scanner (System.in);
+        System.out.println("Digite expresión");
+        int a=objetoentrada.nextInt();
+        System.out.println("Digite el primer dato");
+        int b=objetoentrada.nextInt();
+        System.out.println("Digite el segundo dato");
+        int c=objetoentrada.nextInt();
+        int resultado;
+        if(a==1){
+            resultado=b+c;
+            System.out.println("El resultado de la suma es: "+resultado);
+        }
+        else if(a==2){
+            resultado=b-c;
+            System.out.println("El resultado de la resta es: "+resultado);
+        }
+        else if(a==3){
+            resultado=b*c;
+            System.out.println("El resultado de la multiplicación es: "+resultado);
+        }
+        else if(a==4){
+            resultado=b/c;
+            System.out.println("El resultado de la division es: "+resultado);
+        }else{
+            System.out.println("No existe la función requerida.");
+
+        }
+
+    }
+    
+}
