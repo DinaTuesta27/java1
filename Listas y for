@@ -1,0 +1,59 @@
+
+import java.util.Scanner;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author dinal
+ */
+public class Din {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        /*
+        //INTENTO UNO.
+        int arreglo[]=new int [5];
+        Scanner objeto=new Scanner (System.in);
+        System.out.println("Digite primer dato: ");
+        int a=objeto.nextInt();
+        System.out.println("Digite segundo dato: ");
+        int b=objeto.nextInt();
+        System.out.println("Digite tercer dato: ");
+        int c=objeto.nextInt();
+        System.out.println("Digite cuarto dato: ");
+        int d=objeto.nextInt();
+        System.out.println("Digite quinto dato: ");
+        int e=objeto.nextInt();
+        arreglo[0]=a;
+        arreglo[1]=b;
+        arreglo[2]=c;
+        arreglo[3]=d;
+        arreglo[4]=e;
+        for(int i=0;i<arreglo.length;i++){
+            System.out.println("el arreglo es: "+arreglo[i]);
+        }
+        */
+        //INTENTO DOS.
+        Scanner objeto=new Scanner (System.in);
+        System.out.println("Digite cantidad de veces: ");
+        int veces=objeto.nextInt();
+        int arreglo[]=new int[veces];
+        for(int i=0;i<veces;i++){
+            System.out.println("Ingrese valores: ");
+            int k=objeto.nextInt();
+            arreglo[i]=k;
+        }
+        for(int i=0;i<arreglo.length;i++){
+            System.out.println("El resultado es: "+arreglo[i]);  
+        }
+        
+    }
+    
+}
